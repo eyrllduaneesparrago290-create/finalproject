@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Store</title>
+    <link rel="stylesheet" href="finalproject.css">
+</head>
+<body>
+
+    <header style="margin-bottom: 30px;">
+        <h1>Gadget Shop <span id="cart-count" class="badge">0</span></h1>
+    </header>
+
+    <div class="container">
+        <!-- Product Listing Section -->
+        <section>
+            <div id="products-list" class="products-grid"></div>
+        </section>
+
+        <!-- Shopping Cart Section -->
+        <aside class="cart-container">
+            <h3>Your Cart</h3>
+            <div id="cart-items"></div>
+            <hr>
+            <div id="cart-summary">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+                <button class="checkout-btn" onclick="checkout()">Checkout</button>
+                <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="finalproject.js"></script>
+</body>
+</html>
